@@ -1,0 +1,53 @@
+.app-wrapper{
+  margin: 0 auto;
+  max-width:1440px;
+  display:grid;
+  grid-template-areas:
+    "h h"
+    "n c";
+  grid-template-rows: 60px 1fr;
+  grid-template-columns: 2fr 10fr;
+  grid-gap:10px;
+}
+
+.header{
+  grid-area: h;
+  background:linear-gradient(180deg, #ff0 0%, #fff 90%);
+}
+
+.logo {
+  width:56px;
+  height:56px;
+  background: url(https://www.clipartmax.com/png/full/104-1046266_playstation-logo-black-playstation-logo-png.png) no-repeat center;
+  background-size: contain;
+}
+
+.nav{
+  grid-area: n;
+  background: linear-gradient(90deg, #0ff 0%, #fff 90%);
+}
+
+.content{
+  grid-area: c;
+  background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(102, 250, 3, 1) 10%);
+}
+
+.contentPicture{
+  background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 10%), url(https://img4.goodfon.ru/original/6919x4618/c/2f/beautiful-nebo-leto-sand-sea-pliazh-seascape-tropical-summ-4.jpg) no-repeat center;
+  background-size: cover;
+  width:100%;
+  height:200px;
+}
+
+.profileCard{
+  width:100%;
+  display:flex;
+  flex-flow:row wrap;
+}
+
+.profileCard :first-child{
+  width:20%;
+  aspect-ratio: 1/1;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 30%), url(https://ulibky.ru/wp-content/uploads/2019/10/avatarki_dlya_vatsap_dlya_devushek_8_28060932.jpg) no-repeat center;
+  background-size: cover;
+}
